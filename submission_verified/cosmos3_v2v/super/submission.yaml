@@ -115,7 +115,8 @@ public_info:
   upsample_time: null
 
   # Cost of single video generation in $ (we will estimate using GPU and Generation Time)
-  generation_cost: null
+  # Estimate using an assumed $1.00 per H200 GPU-hour and recorded GPU-seconds.
+  generation_cost: 0.631340
   # GPU model used for video generation (only for non-API model)
   generation_gpu: "NVIDIA H200"
   # Number of GPUs used for generation (only for non-API model)
@@ -149,16 +150,16 @@ terms:
   # Version of submission_terms.md you are accepting — must be "1.0"
   terms_version: "1.0"
   # Set to true to confirm you have read and accept the Physics-IQ Verified Submission Terms
-  terms_accepted: null
+  terms_accepted: true
   # Full legal name of the submitting organization
-  accepted_on_behalf_of: ""
+  accepted_on_behalf_of: "NVIDIA Corporation"
   # ISO 8601 timestamp of acceptance, e.g. "2026-07-02T14:00:00Z"
-  accepted_at: ""
+  accepted_at: "2026-09-18T14:20:22Z"
 
 warranties:
   # All five must be true — see submission_terms.md §6 for the full text
-  has_rights_to_submit: null         # §6(a)
-  no_ip_infringement: null           # §6(b)
-  permitted_by_provider_tos: null    # §6(c)
-  no_personal_data_in_content: null  # §6(d)
-  metadata_accurate: null            # §6(e)
+  has_rights_to_submit: true         # §6(a)
+  no_ip_infringement: true           # §6(b)
+  permitted_by_provider_tos: true    # §6(c)
+  no_personal_data_in_content: true  # §6(d)
+  metadata_accurate: true            # §6(e)
